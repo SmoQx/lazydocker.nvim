@@ -15,7 +15,7 @@ function M.toggle_lazydocker_terminal()
 	else
 		-- Create a floating terminal pane and run a custom command
 		lazydocker_term = Terminal:new({
-			cmd = "lazydocker",
+			cmd = "sudo lazydocker",
 			direction = "float",
 			float_opts = { border = lazydocker_config.options.border },
 			on_open = function(term)
